@@ -1,0 +1,117 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.quicksand-font {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Shared style */
+body{
+    max-width: 1440px;
+    margin: 20px auto ;
+}
+.dispaly-flex{
+    display: flex;
+}
+
+.btn-primary{
+    max-width: 197px;
+    height: 50px;
+    background-color: orange;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 10px 60px;
+    border-radius: 12px;
+}
+
+
+
+/* navbar style */
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.nav-logo{
+    align-items: center;
+}
+.nav-logo .text{
+font-size: 2rem;
+font-weight: 700;
+margin-left: 11px;
+}
+.nav-links{
+    gap: 32px;
+    align-items: center;
+}
+.nav-item{
+    list-style: none;
+}
+.nav-link{
+    text-decoration: none;
+}
+#logo-text1{
+    color: orange;
+}
+#logo-text2{
+    color: skyblue;
+}
+#logo-text3{
+    color: #5D58EF;
+}
+#logo-text4{
+    color: #05D4DF;
+}
+
+/* banner style */
+.banner-container{
+    align-items: center;
+    gap: 50px;
+}
+.banner-title{
+margin-bottom: 25px;
+}
+.banner-text1{
+font-size: 3.5rem;
+font-weight: 700;
+color: orange;
+}
+.banner-text2{
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: black;
+}
+.banner-text3{
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: skyblue;
+}
+.banner-details{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 25px;
+}
+.banner-btn{
+    max-width: 197px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 10px 45px;
+    border-radius: 12px;
+}
+.banner-image img{
+width: 100%;
+}
