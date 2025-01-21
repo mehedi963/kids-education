@@ -19,13 +19,22 @@ body{
     max-width: 1440px;
     margin: 20px auto ;
 }
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
 .dispaly-flex{
     display: flex;
 }
 
 .btn-primary{
-    max-width: 197px;
-    height: 50px;
+    min-width: 12.25rem;
+    text-align: center;
+    /* max-width: 197px;
+    height: 50px; */
     background-color: orange;
     color: white;
     font-size: 1.25rem;
@@ -33,7 +42,13 @@ body{
     padding: 10px 60px;
     border-radius: 12px;
 }
-
+.bg-light{
+    background-image: url('assets/bg.png');
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
 
 
 /* navbar style */
@@ -103,7 +118,6 @@ color: orange;
     margin-bottom: 25px;
 }
 .banner-btn{
-    max-width: 197px;
     height: 50px;
     background-color: black;
     color: white;
@@ -114,4 +128,176 @@ color: orange;
 }
 .banner-image img{
 width: 100%;
+height: auto;
 }
+
+/* cuurioculam standard style */
+
+.cuuri-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 80px 0;
+}
+.curriculam-card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:30px;
+    
+}
+.cards-items{
+    box-shadow: 0 0 5px 0.2px #000000;
+    border-radius:19px ;
+    background: linear-gradient(180deg #DEF5FF #FFFFFF);
+    text-align: center;
+    padding: 30px 20px;
+    margin-bottom: 80px;
+    
+}
+.cards-items .card-image img{
+width: 100%;
+margin:20px 0;
+}
+
+.card-title{
+    font-size: 1.53rem;
+    font-weight: bold;
+    color: #202020;
+    margin-top: 33px ;
+    margin-bottom: 34px;
+}
+.card-details{
+    font-size: 0.97rem;
+    font-weight: 500;
+    color: #808080 ;
+}
+
+.card-btn{
+    font-size: 0.97rem;
+    font-weight: bold;
+    color: #64C8FF;
+    margin-top: 40px; 
+    background-color: #FFFFFF;
+    padding: 10px  20px;
+    border: none;
+    box-shadow: 0 0.5px 0.5px 0 rgba(0, 0, 0, 0.1);
+}
+.icons-container{
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.icons-1{
+    width: 60px;
+    height: 60px;
+   background: orange;
+   border-radius: 50%;
+   position: relative; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+.icons-1 i{
+    font-size: 1.56rem;
+    color: #FFFFFF;
+}
+.icons-2{
+    width: 60px;
+    height: 60px;
+   background: orange;
+   border-radius: 50%;
+   position: relative; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+.icons-2 i{
+    font-size: 1.56rem;
+    color: #FFFFFF;
+}
+
+
+/* responsive for small device */
+@media screen and (max-width:576px){
+    .navbar{
+        flex-direction: column;
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .banner-text1, .banner-text2,
+    .banner-text3{
+        font-size: 2rem;
+    }
+    .banner-details{
+        font-size: 1rem;
+    }
+    .curriculam-card-container{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+}
+
+
+
+/* .footer-1{
+    background-color: #b4e0f7 ;
+}
+
+
+.footer-row{
+    margin-bottom: 3.3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    max-width: 72.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 123px 227px 174px 141px;
+}
+.footer-row-container{
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.25rem;
+}
+.footer-column-logo{
+    gap:2.13rem;
+width: 38%;
+flex-direction: column;
+
+}
+.footer-logo{
+    height: 5rem;
+    width: 18rem;
+    object-fit: contain;
+    justify-content:flex-start ;
+}
+
+.footer-column-about{
+    height: 5rem;
+    width: 16rem;
+    gap: 1.25rem;
+}
+.aboutschool-title{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 2rem ;
+}
+.footer-list .footer-link{
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+} */
+
+
+
+
+
+
