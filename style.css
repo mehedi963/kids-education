@@ -87,6 +87,16 @@ margin-left: 11px;
 #logo-text4{
     color: #05D4DF;
 }
+.menu-icon{
+    display: none;
+}
+.menu-icon i{
+    color: black;
+    font-size: 30px;
+}
+
+
+
 
 /* banner style */
 .banner-container{
@@ -418,11 +428,25 @@ h3{
     border-radius: 5px;
     
 }
+
+
+
 /* responsive for small device */
 @media screen and (max-width:576px){
     .navbar{
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 1px solid orange;
+        padding: 12px 16px;
+        }
+    .menu-icon{
+        display: block;
     }
+.navbar ul, h4, button{
+    display: none;
+}
+
+/* banner section responsive */
     .banner-container{
         flex-direction: column-reverse;
         text-align: center;
@@ -443,9 +467,26 @@ h3{
     .stories-grid{
         grid-template-columns: repeat(2, 1fr);
     }
-.story-card.large {
-grid-row: span 1;
-}
+    .story-card.large {
+        grid-row: span 1;
+    }
+    .story-content p{
+        margin-left: 0px;
+    }
+    .date { 
+    font-size: 0.47rem;
+    font-weight: 500;
+    width: 100px;
+    height: 30px;
+    border-radius: 30px;
+    text-align: center;
+    padding-top: 13px;
+    position: relative;
+    top: -8px;
+    }
+    .story-card h2, h3 {
+        padding-left: 0px;
+    }
 
 
 /* footer responsive */
@@ -462,103 +503,5 @@ grid-row: span 1;
 .social-icons{
     margin-left: 0px;
 }
-
-}
-
-
-
-/* Stories section style */
-#bg-our-stories {
-    border: 1px solid #000000;
-background: linear-gradient(to top, rgba(254, 163, 1, 1), rgba(255, 255, 255, 1));
-}
-
-.container {
-    max-width: 1440px;
-    margin: 0 auto;
-    /* padding: 20px; */
-    text-align: center;
-}
-.container h1{
-font-size: 2.8rem;
-font-weight: bold;
-color: #000000;
-margin-top:60px;
-}
-.stories-grid{
-margin: 80px auto;
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 28px;
-}
-.story-card{
-    background: #fff;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-.story-card.large {
-    grid-row: span 2;
-}
-.story-card img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    
-}
-
-.story-content {
-    padding: 15px;
-    text-align: left;
-}
-.story-content .story-deatils{
-    margin-left: 38px;
-}
-.story-content p{
-    margin-left: 38px;
-}
-.date { 
-font-size: 0.97rem;
-font-weight: 500;
-    width: 175px;
-    height: 48px;
-    border-radius: 30px;
-text-align: center;
-padding-top: 13px;
-position: relative;
-margin-top: 0px;
-top: -50px;
-}
-.blue{
-    background: #05D4DF; 
-}
-.green{
-    background-color:#95B226 ;
-}
-.story-card h2, h3 {
-    margin: 10px 0;
-    color: #333;
-    padding-left: 38px;
-}
-
-h2 {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-h3{
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-
-.view-all {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 30px;
-    border-radius: 12px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom:60px;
 
 }
